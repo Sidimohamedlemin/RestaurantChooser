@@ -10,33 +10,24 @@ import RestaurantScreen from '../../screens/RestaurantScreen';
 import AddRestaurantScreen from '../../screens/AddRestaurantScreen';
 import PeopleScreen from '../../screens/PeopleScreen';
 
-const RootNav = createSwitchNavigator(
-  {
-    Splash: {
-      screen: SplashScreen,
-    },
-    TableNum: {
-      screen: TableNumScreen,
-    },
-    Main: {
-      screen: HomeScreen,
-    },
-    Finished: {
-      screen: FinishedScreen,
-    },
-    Restaurants: {
-      screen: RestaurantScreen,
-    },
-    AddRestaurant: {
-      screen: AddRestaurantScreen,
-    },
-    People: {
-      screen: PeopleScreen, // ✅ Added here correctly
-    },
+const RootNav = createSwitchNavigator({
+  Splash: {
+    screen: SplashScreen
   },
-  {
-    initialRouteName: 'Splash',
+  TableNum: {
+    screen: TableNumScreen
+  },
+  Main: {
+    screen: HomeScreen
+  },
+  Finished: {
+    screen: FinishedScreen
   }
-);
+}, {
+  initialRouteName: 'Splash',
+
+    screen: PeopleScreen,
+});
 
 export default createAppContainer(RootNav);
+
