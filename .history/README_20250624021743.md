@@ -1,0 +1,50 @@
+# Restaurant Chooser
+
+Restaurant Chooser is a React Native mobile application built using Expo. The app allows users to:
+
+- Add restaurant names
+- View a list of saved restaurants
+- Delete restaurants
+- Persist data locally using AsyncStorage
+
+## Features
+
+- Simple and user-friendly interface
+- Built using Expo and React Native
+- Local data storage with AsyncStorage
+- Navigation using React Navigation
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- Expo CLI
+
+### Installation
+
+```bash
+npm install
+npx expo start
+```
+
+You can run the app on an Android/iOS emulator or a physical device with the Expo Go app.
+
+## Project Structure
+
+- `App.js` — Main entry file
+- `screens/` — Contains screen components
+- `components/` — Reusable components
+- `utils/` — Helper functions and storage logic
+
+## License
+
+This project is licensed under the MIT License.
+### Frontend
+echo "# RestaurantChooser" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Sidimohamedlemin/RestaurantChooser.git
+git push -u origin main
